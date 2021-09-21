@@ -1,4 +1,3 @@
-import { findAllByTestId } from "@testing-library/react";
 import { userConstants } from "../actions/constants"
 
 const initState = {
@@ -27,7 +26,6 @@ export default (state = initState, action ) => {
                 ...state,
                 loading:false,
                 error: action.payload.error
-
             }
             break;
     }

@@ -43,8 +43,7 @@ export const Register = (props) => {
     //if (user.loading) {
     //    return <p>Loading....</p>
     //}
-
-
+    
     return (
         <Layout>
             <Container>
@@ -53,7 +52,7 @@ export const Register = (props) => {
                             <h2>Welcome back!</h2>
                             <p>Please Register your account</p>
                         </div>
-                        {user.message}
+                        {user.message}{user.errors}
                         <Form onSubmit={userRegister}>
                         <Input
                             type="text"
