@@ -26,7 +26,7 @@ export const HomePage = (props) => {
   return (
     <Layout>
       <Container>
-        {renderLoggedInLinks()}
+        {auth.authenticate ? renderLoggedInLinks() : null }
         <br/>
         <div className="my-5">
           <h1>Build By
