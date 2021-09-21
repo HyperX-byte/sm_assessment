@@ -14,19 +14,22 @@ export const register = (user) => {
             ...user
         });
 
-        if (res.status === 201) {
+        if (res.status === 200) {
             const {message} = res.data;
             dispatch({
                 type: userConstants.USER_REGISTER_SUCCESS,
                 payload: {message}
             });
         }else{
-            dispatch({
-                type: userConstants.USER_REGISTER_FAILURE,
-                payload:{
-                    error: res.data.error
-                }
-            });
+            console.log(res.data.errors);
+            if(res.status === 201){
+                dispatch({
+                    type: userConstants.USER_REGISTER_FAILURE,
+                    payload:{
+                        error: res.data.errors
+                    }
+                });
+            }
         }
     }
 }

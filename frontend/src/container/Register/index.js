@@ -52,7 +52,7 @@ export const Register = (props) => {
                             <h2>Welcome back!</h2>
                             <p>Please Register your account</p>
                         </div>
-                        {user.message}{user.errors}
+                        {user.message}
                         <Form onSubmit={userRegister}>
                         <Input
                             type="text"
@@ -81,6 +81,8 @@ export const Register = (props) => {
                         <br/>
                         <CustomButton value="Register" />
                         </Form>
+                        <br/>
+                        {user.error}
                     </div>
             </Container>
         </Layout>
