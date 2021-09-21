@@ -36,9 +36,9 @@ export const Register = (props) => {
     }
 
 
-    //if (auth.authenticate) {
-    //    return <Redirect to={`/`} />
-    //}
+    if (auth.authenticate) {
+        return <Redirect to={`/`} />
+    }
 
     //if (user.loading) {
     //    return <p>Loading....</p>

@@ -14,7 +14,7 @@ export const Layout = (props) => {
       <Container fluid>
         <Row style={{ height:'100vh'}} >
           <Col md={7} className="left-column p-0" >
-            <Image className="img-left" style={{ objectFit: 'cover', height:'100%'}} src={img} />
+            <Image className="img-left" style={{ objectFit: 'cover', height:'100%',width:'100%'}} src={img} />
           </Col>
           <Col md={5}>
             {props.children}

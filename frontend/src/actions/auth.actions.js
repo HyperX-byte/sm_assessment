@@ -21,14 +21,12 @@ export const register = (user) => {
                 payload: {message}
             });
         }else{
-            if(res.status === 400){
-                dispatch({
-                    type: userConstants.USER_REGISTER_FAILURE,
-                    payload:{
-                        error: res.data.errors
-                    }
-                });
-            }
+            dispatch({
+                type: userConstants.USER_REGISTER_FAILURE,
+                payload:{
+                    error: res.data.error
+                }
+            });
         }
     }
 }

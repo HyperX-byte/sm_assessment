@@ -1,5 +1,4 @@
 import axios from "../helpers/axios";
-import { bindActionCreators } from "redux";
 import { userListConstants } from "./constants";
 import { api } from '../urlConfig';
 

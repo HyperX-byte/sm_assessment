@@ -18,7 +18,7 @@ export const ListPage = (props) => {
   const renderEmails = (emails) => {
     let getEmail = [];
     for (let email of emails) {
-      getEmail.push(<li>{email}</li>);
+      getEmail.push(<li key={email}>{email}</li>);
     }
     return getEmail
   }

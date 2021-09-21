@@ -29,9 +29,9 @@ export const Signin = (props) => {
         dispatch(login(user));
     }
 
-    //if (auth.authenticate) {
-    //    return <Redirect to={`/`} />
-    //}
+    if (auth.authenticate) {
+        return <Redirect to={`/`} />
+    }
 
     return (
         <Layout>
