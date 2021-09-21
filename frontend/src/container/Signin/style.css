@@ -1,0 +1,10 @@
+.input-group-text{
+    background-color: none !important;
+    border:none !important;
+}
+
+@media  screen and (max-width:600px) {
+    .left-column{
+        display: none;
+    }
+}
