@@ -66,6 +66,7 @@ export const Signin = (props) => {
                         <CustomButton value="Login" />
                     </div>
                 </Form>
+                <p>Term of Use . Privacy Policy</p>
             </Container>
         </Layout>
     )
